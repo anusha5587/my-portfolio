@@ -1,0 +1,68 @@
+.work-intro {
+  margin-top: 10px;
+  font-size: 40px;
+  padding-bottom: 40px;
+}
+.container-work {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.info {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.info h2 {
+  padding: 10px;
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.visually-hidden {
+  position: fixed;
+  left: -9999px;
+}
+
+input[type="radio"]:checked + label + .info {
+  display: block;
+}
+input[type="radio"]:checked + label {
+  display: block;
+}
+
+.btn {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.col-3 {
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  margin-bottom: 20px;
+}
+
+.container-work .col-3 label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container-work .col-3 label:hover {
+  text-decoration: underline;
+  background-color: black;
+  color: white;
+}
+
+.container-work .col-3 input[type="radio"]:checked + label {
+  background-color: black;
+  color: white;
+}

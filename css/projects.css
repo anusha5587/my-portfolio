@@ -1,0 +1,46 @@
+.content-container h1 {
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+.content-container p {
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.card-text p {
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+}
+
+.video-container video {
+  width: 100%;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.video-overlay i {
+  font-size: 48px;
+  color: white;
+  cursor: pointer;
+}
+
+.card-container {
+  margin: 0 auto;
+}
+
+.card {
+  padding: 10px;
+  margin-top: 20px;
+}
