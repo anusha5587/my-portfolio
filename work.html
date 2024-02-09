@@ -20,6 +20,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
     <script
       src="https://kit.fontawesome.com/4b183af785.js"
       crossorigin="anonymous"
@@ -98,6 +99,133 @@
           </div>
         </nav>
       </div>
+      <div class="container-work">
+        <h1 class="work-intro">Professional Journey Overview</h1>
+        <div class="col-3">
+          <input
+            type="radio"
+            id="deloitte"
+            name="company"
+            class="visually-hidden"
+          />
+          <label
+            for="deloitte"
+            class="btn btn-sm btn-secondary rounded-pill"
+            onclick="toggleInfo('info-deloitte')"
+            >Deloitte LLP, London, GB</label
+          >
+
+          <div id="info-deloitte" class="info">
+            <h2>Business Manager</h2>
+            Led Business Management team along with the COO of Deloitte Cyber
+            Intelligence Team, ensuring top-tier delivery of Cyber managed
+            services. Managed and motivated Consultants, making policy
+            adjustments based on sales and expenses. Improved operations with
+            employee training sessions, serving as a single point of contact for
+            stakeholders. Identified and deployed resources for project
+            completion, implementing growth strategies for long-term
+            prospecting. Ensured accuracy in Engagement Revenue and Costs,
+            managed complex project concerns, and tracked expenses within
+            cashflow targets. Implemented automation for operations, reducing
+            financial discrepancies. Evaluated financial statements, worked with
+            sales for customer connections, and chaired Risk Review meetings.
+            Defined project scope, facilitated communication across departments,
+            and forged supplier relationships. Scheduled shifts based on
+            seasonal demands.
+          </div>
+        </div>
+        <div class="col-3">
+          <input type="radio" id="ecs" name="company" class="visually-hidden" />
+          <label
+            for="ecs"
+            class="btn btn-sm btn-secondary rounded-pill"
+            onclick="toggleInfo('info-ecs')"
+            >ECS InfoSolutions, Pune, IN, GB</label
+          >
+
+          <div id="info-ecs" class="info">
+            <h2>PMO Analyst</h2>
+            Contributed to significant projects for renowned banks, including
+            Royal Bank of Scotland and Barclays, involving system upgrades and
+            IE 11 Migration. Coordinated User Acceptance Testing (UAT) for large
+            user groups, managed tools rollout, and ensured seamless project
+            delivery. Emphasized clear communication on project status,
+            timelines, and action items. Specialized in simplifying processes
+            and building strong relationships with stakeholders for successful
+            project outcomes.
+          </div>
+        </div>
+        <div class="col-3">
+          <input type="radio" id="ibm" name="company" class="visually-hidden" />
+          <label
+            for="ibm"
+            class="btn btn-sm btn-secondary rounded-pill"
+            onclick="toggleInfo('info-ibm')"
+            >IBM, Bangalore, IN</label
+          >
+          <div id="info-ibm" class="info">
+            <h2>Project Coordinator</h2>
+            Coordinated project activities for diverse clients, focusing on
+            maintaining compliance and executing patching activities. Managed
+            change requests, updated the Configuration Management Database, and
+            streamlined processes for effective service delivery. Oversaw
+            onboarding processes, prepared documentation, and conducted training
+            for new team members. Contributed to ongoing compliance through
+            quarterly patching for Legacy Cloud Managed Services and wider
+            Managed Application Services. Played a role in supporting change
+            management for UNIX and WINDOWS Servers' upgrades
+          </div>
+        </div>
+        <div class="col-3">
+          <input
+            type="radio"
+            id="accenture"
+            name="company"
+            class="visually-hidden"
+          />
+          <label
+            for="accenture"
+            class="btn btn-sm btn-secondary rounded-pill"
+            onclick="toggleInfo('info-accenture')"
+            >Accenture, Bangalore, IN</label
+          >
+          <div id="info-accenture" class="info">
+            <h2>Service Management Analyst</h2>
+            Played a pivotal role in a service management team within a
+            600-member project team, focusing on infrastructure and application
+            support while implementing ITIL processes on ServiceNow. Actively
+            contributed to defining and implementing incident, change, and
+            problem management processes, overseeing the lifecycle on
+            ServiceNow. Served as the primary contact for escalation and major
+            incidents, collaborating effectively with vendors and stakeholders.
+            Monitored service delivery, reported incidents, changes, and
+            problems, presenting comprehensive service level reports to senior
+            leadership. Managed ServiceNow Known Error Database and
+            Configuration Management Database, showcasing ServiceNow
+            administration expertise. Conducted impactful training sessions on
+            incident and change management. Chaired critical Change Advisory
+            Board (CAB) and Emergency CAB meetings, ensuring swift
+            decision-making. Administered client contacts, fortified stakeholder
+            communications, and collaborated to streamline ticket closure.
+            Played a key role in forecasting server lifespan reports via
+            ServiceNow. Committed to SLAs, with meticulous weekly and monthly
+            resource planning. Led project orientation, new joiner inductions,
+            and provided SME support for the SAP Level 1 team.
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script>
+      function toggleInfo(infoId) {
+        let selectedInfo = document.getElementById(infoId);
+
+        if (selectedInfo.style.display === "block") {
+          selectedInfo.style.display = "none";
+        } else {
+          selectedInfo.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
