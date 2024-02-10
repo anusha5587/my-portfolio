@@ -6,13 +6,14 @@
 aside {
   width: 50%;
   float: right;
-  color: #29627e;
+  color: #e3e8eb;
   margin-left: 30px;
+  display: block;
 }
 
 .content-container {
-  padding: 10px;
-  color: black;
+  display: block;
+  justify-content: space-between;
 }
 
 label,
@@ -33,7 +34,7 @@ form {
 }
 
 label {
-  width: 150px;
+  width: 200px;
   text-align: right;
 }
 
@@ -45,11 +46,6 @@ textarea {
   box-sizing: border-box;
   border: none;
   border-radius: 5px;
-}
-
-input:focus,
-textarea:focus {
-  border-color: brown;
 }
 
 textarea {
@@ -69,6 +65,12 @@ button {
   border-radius: 5px;
 }
 
+button:hover {
+  background-color: black;
+  text-decoration: underline;
+  color: white;
+}
+
 .contact-details a {
   text-decoration: none;
   font-size: 15px;
@@ -81,5 +83,32 @@ button {
 
 .contact-me {
   display: flexbox;
-  margin-top: 80px;
+  margin-top: 60px;
+}
+
+@media (max-width: 800px) {
+  .contact-heading {
+    font-size: 20px;
+  }
+  .content-container {
+    flex-direction: column;
+  }
+
+  input,
+  textarea {
+    width: 300px;
+  }
+
+  aside,
+  .content {
+    width: 100%; /* Make both the aside and content take full width */
+    margin-bottom: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  form {
+    border: none;
+    margin-bottom: 40px;
+  }
 }

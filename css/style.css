@@ -7,18 +7,23 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
   font-family: var(--font-commonused);
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   background-color: whitesmoke;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
-    url("/images/projects/header2.png");
+    url("/images/projects/header4.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: white;
   text-align: center;
   padding: 200px 0;
@@ -27,6 +32,13 @@ header {
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-main {
+  font-size: 40px;
 }
 
 .container-fluid {
@@ -35,21 +47,15 @@ header {
 }
 
 .container-introduction {
-  margin-top: 60px;
+  margin-top: 40px;
+}
+
+.introduction {
+  padding-top: 20px;
 }
 
 .intro-para {
   padding-top: 15px;
-}
-
-.carousel-control-next-icon {
-  background-color: black;
-  padding-right: 0;
-}
-
-.carousel-control-prev-icon {
-  background-color: black;
-  padding-left: 0;
 }
 
 h1,
@@ -79,7 +85,6 @@ h3 {
 
 .nav-link {
   text-decoration: none;
-
   color: black;
   font-family: var(--font-commonused);
   font-size: 15px;
@@ -99,7 +104,7 @@ h3 {
 .navbar-nav {
   margin: 0 auto;
   display: flex;
-  gap: 20px;
+  gap: 15px;
   margin-right: 20px;
 }
 
@@ -138,16 +143,12 @@ aside {
   margin-right: 0;
 }
 
+footer {
+  margin-top: auto;
+}
 footer .contact-box {
   margin: 0 auto;
   padding-top: 90px;
-}
-
-footer .email-id {
-  text-decoration: none;
-  font-size: 24px;
-  color: black;
-  font-weight: bold;
 }
 
 footer .primary-link {
@@ -173,8 +174,50 @@ footer .social-links a {
   font-size: 30px;
   transition: all 100ms ease-in-out;
 }
-
+.project-coded {
+  font-size: 15px;
+}
 footer .social-links a:hover {
   color: whitesmoke;
   background-color: black;
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    padding: 100px 0;
+  }
+  .heading-main {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  footer .primary-link {
+    font-size: 12px;
+  }
+
+  footer .primary-link:hover {
+    color: whitesmoke;
+    background-color: black;
+    text-decoration: underline;
+  }
+
+  footer .social-links a {
+    margin: 0 10px;
+    color: black;
+    border-radius: 50%;
+    border-color: black;
+    padding: 5px 11px;
+    font-size: 15px;
+    transition: all 100ms ease-in-out;
+  }
+
+  .project-coded {
+    font-size: 10px;
+  }
+
+  footer .social-links a:hover {
+    color: whitesmoke;
+    background-color: black;
+  }
 }
