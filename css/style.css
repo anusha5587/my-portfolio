@@ -143,8 +143,10 @@ aside {
   margin-right: 0;
 }
 
-footer {
+.footer-links {
   margin-top: auto;
+  padding-top: 30px;
+  padding-bottom: 0;
 }
 footer .contact-box {
   margin: 0 auto;
